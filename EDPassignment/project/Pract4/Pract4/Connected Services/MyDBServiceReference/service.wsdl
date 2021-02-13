@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/MyDBService" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/MyDBService.Entity" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllEmployee_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllEmployee" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllEmployee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetEmployeeByNric_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeByNric" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetEmployeeByNric_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeByNricResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateEmployee_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateEmployee" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateEmployee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllBooking_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBooking" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllBooking_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBookingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBookingByFacilityID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookingByFacilityID" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBookingByFacilityID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookingByFacilityIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateBooking_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateBooking" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateBooking_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateBookingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllUserInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllUserInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetUserInfoByUserID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInfoByUserID" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetUserInfoByUserID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInfoByUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateUserInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateUserInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataResponse" message="tns:IService1_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContractResponse" message="tns:IService1_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllEmployee">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllEmployee" message="tns:IService1_GetAllEmployee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllEmployeeResponse" message="tns:IService1_GetAllEmployee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeByNric">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetEmployeeByNric" message="tns:IService1_GetEmployeeByNric_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetEmployeeByNricResponse" message="tns:IService1_GetEmployeeByNric_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateEmployee">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CreateEmployee" message="tns:IService1_CreateEmployee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CreateEmployeeResponse" message="tns:IService1_CreateEmployee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBooking">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllBooking" message="tns:IService1_GetAllBooking_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllBookingResponse" message="tns:IService1_GetAllBooking_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBookingByFacilityID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetBookingByFacilityID" message="tns:IService1_GetBookingByFacilityID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetBookingByFacilityIDResponse" message="tns:IService1_GetBookingByFacilityID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateBooking">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CreateBooking" message="tns:IService1_CreateBooking_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CreateBookingResponse" message="tns:IService1_CreateBooking_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUserInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllUserInfo" message="tns:IService1_GetAllUserInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllUserInfoResponse" message="tns:IService1_GetAllUserInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfoByUserID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetUserInfoByUserID" message="tns:IService1_GetUserInfoByUserID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetUserInfoByUserIDResponse" message="tns:IService1_GetUserInfoByUserID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateUserInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CreateUserInfo" message="tns:IService1_CreateUserInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CreateUserInfoResponse" message="tns:IService1_CreateUserInfo_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetDataUsingDataContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllEmployee">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAllEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeByNric">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetEmployeeByNric" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEmployee">
+      <soap:operation soapAction="http://tempuri.org/IService1/CreateEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBooking">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAllBooking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBookingByFacilityID">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetBookingByFacilityID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateBooking">
+      <soap:operation soapAction="http://tempuri.org/IService1/CreateBooking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUserInfo">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAllUserInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfoByUserID">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetUserInfoByUserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUserInfo">
+      <soap:operation soapAction="http://tempuri.org/IService1/CreateUserInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/MyDBService/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
