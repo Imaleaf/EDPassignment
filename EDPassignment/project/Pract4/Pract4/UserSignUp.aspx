@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
      <div>
-    <h3>Create Facility</h3>
+    <h3>Registration</h3>
     <table style="width:100%;">
         <tr>
             <td class="auto-style1" style="width: 134px">UserID:</td>
@@ -89,18 +89,5 @@
         </tr>
     </table>
     </div>
-        <asp:GridView ID="gvUserInfo" runat="server" AutoGenerateColumns="False" CellPadding="0" CssClass="myDatagrid">
-            <Columns>
-                <asp:BoundField DataField="UserID" HeaderText="UserID" ReadOnly="True" />
-                <asp:BoundField DataField="Password" HeaderText="Password" ReadOnly="True" />
-                <asp:BoundField DataField="Name" HeaderText="Name" ReadOnly="True" />
-                <asp:BoundField DataField="Dob" HeaderText="Date" ReadOnly="True" DataFormatString="{0:dd/MM/yyyy}" />
-                <asp:BoundField DataField="Contact" HeaderText="Contact" ReadOnly="True" />
-                <asp:BoundField DataField="Email" HeaderText="Email" ReadOnly="True" />
-                <asp:BoundField DataField="Country" HeaderText="Country" ReadOnly="True" />
-                <asp:BoundField DataField="City" HeaderText="City" ReadOnly="True" />
-                <asp:BoundField DataField="Postalcode" HeaderText="Postalcode" ReadOnly="True" />
-                
-            </Columns>
-        </asp:GridView>
+        
 </asp:Content>

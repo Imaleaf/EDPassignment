@@ -123,6 +123,9 @@
     <Content Include="Connected Services\MyDBServiceReference\Pract4.MyDBServiceReference.UserInfo.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\MyDBServiceReference\Pract4.MyDBServiceReference.Login.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\MyDBServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -197,7 +200,9 @@
     <Content Include="Site.Master" />
     <Content Include="TDUpdateForm.aspx" />
     <Content Include="TermDepositForm.aspx" />
+    <Content Include="UserLogin.aspx" />
     <Content Include="UserSignUp.aspx" />
+    <Content Include="UserViewProfile.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web1.config" />
     <Content Include="Bundle.config" />
@@ -285,12 +290,26 @@
     <Compile Include="TermDepositForm.aspx.designer.cs">
       <DependentUpon>TermDepositForm.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UserLogin.aspx.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLogin.aspx.designer.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserSignUp.aspx.cs">
       <DependentUpon>UserSignUp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserSignUp.aspx.designer.cs">
       <DependentUpon>UserSignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserViewProfile.aspx.cs">
+      <DependentUpon>UserViewProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserViewProfile.aspx.designer.cs">
+      <DependentUpon>UserViewProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

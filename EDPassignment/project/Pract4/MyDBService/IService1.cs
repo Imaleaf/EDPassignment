@@ -39,6 +39,9 @@ namespace MyDBService
         UserInfo GetUserInfoByUserID(string userID);
         [OperationContract]
         int CreateUserInfo(string name, DateTime dob, string contact, string email, string country, string city, string postalcode, string userID, string password);
+
+        [OperationContract]
+        Login GetLoginById(string userid);
     }
 
     // Use a data contract as illustrated in the sample below to add composite types to service operations.

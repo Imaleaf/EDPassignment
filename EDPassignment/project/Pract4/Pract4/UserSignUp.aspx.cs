@@ -26,9 +26,9 @@ namespace Pract4
             eList = client.GetAllUserInfo().ToList<UserInfo>();
 
             // using gridview to bind to the list of employee objects
-            gvUserInfo.Visible = true;
-            gvUserInfo.DataSource = eList;
-            gvUserInfo.DataBind();
+            //gvUserInfo.Visible = true;
+           //gvUserInfo.DataSource = eList;
+            //gvUserInfo.DataBind();
 
 
         }
@@ -111,6 +111,7 @@ namespace Pract4
                     RefreshGridView();
                     lbMsg.ForeColor = Color.Green;
                     lbMsg.Text = "User Signed Up Successfully!";
+                    Response.Redirect("~/UserLogin.aspx");
                 }
                 else
                     lbMsg.Text = "SQL Error. Sign Up Unsuccessful!";

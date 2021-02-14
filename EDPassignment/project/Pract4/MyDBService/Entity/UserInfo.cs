@@ -65,6 +65,7 @@ namespace MyDBService.Entity
             sqlCmd.Parameters.AddWithValue("@paraPostalCode", PostalCode);
             sqlCmd.Parameters.AddWithValue("@paraUserID", UserID);
             sqlCmd.Parameters.AddWithValue("@paraPassword", Password);
+         
 
             // Step 4 Open connection the execute NonQuery of sql command   
             myConn.Open();

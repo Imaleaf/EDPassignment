@@ -76,5 +76,10 @@ namespace MyDBService
             return info.Insert();
         }
 
+        public Login GetLoginById(string userid)
+        {
+            Login obj = new Login();
+            return obj.SelectByuserid(userid);
+        }
     }
 }

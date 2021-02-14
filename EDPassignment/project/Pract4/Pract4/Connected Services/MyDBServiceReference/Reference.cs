@@ -513,6 +513,179 @@ namespace Pract4.MyDBServiceReference {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Login", Namespace="http://schemas.datacontract.org/2004/07/MyDBService.Entity")]
+    [System.SerializableAttribute()]
+    public partial class Login : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ContactField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CountryField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime DobField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string EmailField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PasswordField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PostalCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UserIDField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string City {
+            get {
+                return this.CityField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CityField, value) != true)) {
+                    this.CityField = value;
+                    this.RaisePropertyChanged("City");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Contact {
+            get {
+                return this.ContactField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ContactField, value) != true)) {
+                    this.ContactField = value;
+                    this.RaisePropertyChanged("Contact");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Country {
+            get {
+                return this.CountryField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CountryField, value) != true)) {
+                    this.CountryField = value;
+                    this.RaisePropertyChanged("Country");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Dob {
+            get {
+                return this.DobField;
+            }
+            set {
+                if ((this.DobField.Equals(value) != true)) {
+                    this.DobField = value;
+                    this.RaisePropertyChanged("Dob");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Email {
+            get {
+                return this.EmailField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.EmailField, value) != true)) {
+                    this.EmailField = value;
+                    this.RaisePropertyChanged("Email");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name {
+            get {
+                return this.NameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NameField, value) != true)) {
+                    this.NameField = value;
+                    this.RaisePropertyChanged("Name");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Password {
+            get {
+                return this.PasswordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PasswordField, value) != true)) {
+                    this.PasswordField = value;
+                    this.RaisePropertyChanged("Password");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string PostalCode {
+            get {
+                return this.PostalCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PostalCodeField, value) != true)) {
+                    this.PostalCodeField = value;
+                    this.RaisePropertyChanged("PostalCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string UserID {
+            get {
+                return this.UserIDField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UserIDField, value) != true)) {
+                    this.UserIDField = value;
+                    this.RaisePropertyChanged("UserID");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="MyDBServiceReference.IService1")]
     public interface IService1 {
@@ -582,6 +755,12 @@ namespace Pract4.MyDBServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/CreateUserInfo", ReplyAction="http://tempuri.org/IService1/CreateUserInfoResponse")]
         System.Threading.Tasks.Task<int> CreateUserInfoAsync(string name, System.DateTime dob, string contact, string email, string country, string city, string postalcode, string userID, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetLoginById", ReplyAction="http://tempuri.org/IService1/GetLoginByIdResponse")]
+        Pract4.MyDBServiceReference.Login GetLoginById(string userid);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetLoginById", ReplyAction="http://tempuri.org/IService1/GetLoginByIdResponse")]
+        System.Threading.Tasks.Task<Pract4.MyDBServiceReference.Login> GetLoginByIdAsync(string userid);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -697,6 +876,14 @@ namespace Pract4.MyDBServiceReference {
         
         public System.Threading.Tasks.Task<int> CreateUserInfoAsync(string name, System.DateTime dob, string contact, string email, string country, string city, string postalcode, string userID, string password) {
             return base.Channel.CreateUserInfoAsync(name, dob, contact, email, country, city, postalcode, userID, password);
+        }
+        
+        public Pract4.MyDBServiceReference.Login GetLoginById(string userid) {
+            return base.Channel.GetLoginById(userid);
+        }
+        
+        public System.Threading.Tasks.Task<Pract4.MyDBServiceReference.Login> GetLoginByIdAsync(string userid) {
+            return base.Channel.GetLoginByIdAsync(userid);
         }
     }
 }
