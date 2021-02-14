@@ -74,7 +74,7 @@
         <tr>
             <td class="auto-style1" style="width: 134px">&nbsp;</td>
             <td>
-                <asp:Button ID="btnSignUp" runat="server" OnClick="btnAdd_Click" Text="SignUp" Width="77px" />
+                <asp:Button ID="btnSignUp" runat="server" OnClick="btnAdd_Click" Text="Register" Width="77px" />
             </td>
         </tr>
         <tr>

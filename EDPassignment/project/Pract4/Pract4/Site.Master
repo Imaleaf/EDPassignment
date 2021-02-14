@@ -46,13 +46,16 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand">Orchid Banking</a>
+                    <a class="navbar-brand">100Fit</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/EmployeeForm.aspx">Employee</a></li>
-                        <li><a runat="server" href="~/CustomerForm.aspx">Customer</a></li>
+                        <li><a runat="server" href="~/BookingFormCustomer.aspx">Booking</a></li>
+                        <li><a runat="server" href="~/.aspx">Buddy System</a></li>
+                        <li><a runat="server" href="~/UserLogin.aspx">Login</a></li>
+                        <li><a runat="server" href="~/UserSignUp.aspx">Registration</a></li>
+                        <li><a runat="server" href="~/UserViewProfile.aspx">View Profile</a></li>
                     </ul>
                 </div>
             </div>

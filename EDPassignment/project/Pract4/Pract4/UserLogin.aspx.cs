@@ -31,7 +31,7 @@ namespace Pract4
                 if (TbPW.Text == logObj.Password)
                 {
                     Session["ssUserid"] = TbUserID.Text;
-                    Response.Redirect("UserViewProfile.aspx");
+                    Response.Redirect("~/");
                 }
                 else
                 {
