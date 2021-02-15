@@ -11,9 +11,10 @@ namespace Pract4
     public partial class BuddyViewProfile : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
+        {   
+            
             MyDBServiceReference.Service1Client client = new MyDBServiceReference.Service1Client();
-            Buddy buddyObj = client.GetBuddyByName("test23");
+            Buddy buddyObj = client.GetBuddyByName(Session["ssname"].ToString());
             if (buddyObj != null)
             {
                 DateTime Birthdate = buddyObj.Birthdate;
