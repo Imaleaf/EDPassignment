@@ -15,7 +15,7 @@ namespace Pract4.MyDBServiceReference {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CompositeType", Namespace="http://schemas.datacontract.org/2004/07/MyDBService")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="CompositeType", Namespace="http://schemas.datacontract.org/2004/07/")]
     [System.SerializableAttribute()]
     public partial class CompositeType : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -686,6 +686,259 @@ namespace Pract4.MyDBServiceReference {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Buddy", Namespace="http://schemas.datacontract.org/2004/07/MyDBService.Entity")]
+    [System.SerializableAttribute()]
+    public partial class Buddy : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime BirthdateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double Buddyage1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double Buddyage2Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BuddydaysField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BuddydurationField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BuddyfitnessField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BuddygenderField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BuddytypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string GenderField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ImageNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ImagePathField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IntroductionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LocationField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Birthdate {
+            get {
+                return this.BirthdateField;
+            }
+            set {
+                if ((this.BirthdateField.Equals(value) != true)) {
+                    this.BirthdateField = value;
+                    this.RaisePropertyChanged("Birthdate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double Buddyage1 {
+            get {
+                return this.Buddyage1Field;
+            }
+            set {
+                if ((this.Buddyage1Field.Equals(value) != true)) {
+                    this.Buddyage1Field = value;
+                    this.RaisePropertyChanged("Buddyage1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double Buddyage2 {
+            get {
+                return this.Buddyage2Field;
+            }
+            set {
+                if ((this.Buddyage2Field.Equals(value) != true)) {
+                    this.Buddyage2Field = value;
+                    this.RaisePropertyChanged("Buddyage2");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Buddydays {
+            get {
+                return this.BuddydaysField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BuddydaysField, value) != true)) {
+                    this.BuddydaysField = value;
+                    this.RaisePropertyChanged("Buddydays");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Buddyduration {
+            get {
+                return this.BuddydurationField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BuddydurationField, value) != true)) {
+                    this.BuddydurationField = value;
+                    this.RaisePropertyChanged("Buddyduration");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Buddyfitness {
+            get {
+                return this.BuddyfitnessField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BuddyfitnessField, value) != true)) {
+                    this.BuddyfitnessField = value;
+                    this.RaisePropertyChanged("Buddyfitness");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Buddygender {
+            get {
+                return this.BuddygenderField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BuddygenderField, value) != true)) {
+                    this.BuddygenderField = value;
+                    this.RaisePropertyChanged("Buddygender");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Buddytype {
+            get {
+                return this.BuddytypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BuddytypeField, value) != true)) {
+                    this.BuddytypeField = value;
+                    this.RaisePropertyChanged("Buddytype");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Gender {
+            get {
+                return this.GenderField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.GenderField, value) != true)) {
+                    this.GenderField = value;
+                    this.RaisePropertyChanged("Gender");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ImageName {
+            get {
+                return this.ImageNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ImageNameField, value) != true)) {
+                    this.ImageNameField = value;
+                    this.RaisePropertyChanged("ImageName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ImagePath {
+            get {
+                return this.ImagePathField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ImagePathField, value) != true)) {
+                    this.ImagePathField = value;
+                    this.RaisePropertyChanged("ImagePath");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Introduction {
+            get {
+                return this.IntroductionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IntroductionField, value) != true)) {
+                    this.IntroductionField = value;
+                    this.RaisePropertyChanged("Introduction");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Location {
+            get {
+                return this.LocationField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LocationField, value) != true)) {
+                    this.LocationField = value;
+                    this.RaisePropertyChanged("Location");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name {
+            get {
+                return this.NameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NameField, value) != true)) {
+                    this.NameField = value;
+                    this.RaisePropertyChanged("Name");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="MyDBServiceReference.IService1")]
     public interface IService1 {
@@ -761,6 +1014,54 @@ namespace Pract4.MyDBServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetLoginById", ReplyAction="http://tempuri.org/IService1/GetLoginByIdResponse")]
         System.Threading.Tasks.Task<Pract4.MyDBServiceReference.Login> GetLoginByIdAsync(string userid);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetAllBuddy", ReplyAction="http://tempuri.org/IService1/GetAllBuddyResponse")]
+        Pract4.MyDBServiceReference.Buddy[] GetAllBuddy();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetAllBuddy", ReplyAction="http://tempuri.org/IService1/GetAllBuddyResponse")]
+        System.Threading.Tasks.Task<Pract4.MyDBServiceReference.Buddy[]> GetAllBuddyAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetBuddyByName", ReplyAction="http://tempuri.org/IService1/GetBuddyByNameResponse")]
+        Pract4.MyDBServiceReference.Buddy GetBuddyByName(string name);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetBuddyByName", ReplyAction="http://tempuri.org/IService1/GetBuddyByNameResponse")]
+        System.Threading.Tasks.Task<Pract4.MyDBServiceReference.Buddy> GetBuddyByNameAsync(string name);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/CreateBuddy", ReplyAction="http://tempuri.org/IService1/CreateBuddyResponse")]
+        int CreateBuddy(string name, string gender, System.DateTime dob, string location, string introduction, string buddytype, string buddygender, string buddyduration, string buddydays, string buddyfitness, double buddyage1, double buddyage2, string imagename, string imagepath);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/CreateBuddy", ReplyAction="http://tempuri.org/IService1/CreateBuddyResponse")]
+        System.Threading.Tasks.Task<int> CreateBuddyAsync(string name, string gender, System.DateTime dob, string location, string introduction, string buddytype, string buddygender, string buddyduration, string buddydays, string buddyfitness, double buddyage1, double buddyage2, string imagename, string imagepath);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateIntroduction", ReplyAction="http://tempuri.org/IService1/UpdateIntroductionResponse")]
+        int UpdateIntroduction(string userid, string introduction);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateIntroduction", ReplyAction="http://tempuri.org/IService1/UpdateIntroductionResponse")]
+        System.Threading.Tasks.Task<int> UpdateIntroductionAsync(string userid, string introduction);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateWorkoutDays", ReplyAction="http://tempuri.org/IService1/UpdateWorkoutDaysResponse")]
+        int UpdateWorkoutDays(string userid, string workoutdays);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateWorkoutDays", ReplyAction="http://tempuri.org/IService1/UpdateWorkoutDaysResponse")]
+        System.Threading.Tasks.Task<int> UpdateWorkoutDaysAsync(string userid, string workoutdays);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateWorkoutDuration", ReplyAction="http://tempuri.org/IService1/UpdateWorkoutDurationResponse")]
+        int UpdateWorkoutDuration(string userid, string workoutduration);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateWorkoutDuration", ReplyAction="http://tempuri.org/IService1/UpdateWorkoutDurationResponse")]
+        System.Threading.Tasks.Task<int> UpdateWorkoutDurationAsync(string userid, string workoutduration);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateGender", ReplyAction="http://tempuri.org/IService1/UpdateGenderResponse")]
+        int UpdateGender(string userid, string gender);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateGender", ReplyAction="http://tempuri.org/IService1/UpdateGenderResponse")]
+        System.Threading.Tasks.Task<int> UpdateGenderAsync(string userid, string gender);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateWorkoutType", ReplyAction="http://tempuri.org/IService1/UpdateWorkoutTypeResponse")]
+        int UpdateWorkoutType(string userid, string workouttype);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateWorkoutType", ReplyAction="http://tempuri.org/IService1/UpdateWorkoutTypeResponse")]
+        System.Threading.Tasks.Task<int> UpdateWorkoutTypeAsync(string userid, string workouttype);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -884,6 +1185,70 @@ namespace Pract4.MyDBServiceReference {
         
         public System.Threading.Tasks.Task<Pract4.MyDBServiceReference.Login> GetLoginByIdAsync(string userid) {
             return base.Channel.GetLoginByIdAsync(userid);
+        }
+        
+        public Pract4.MyDBServiceReference.Buddy[] GetAllBuddy() {
+            return base.Channel.GetAllBuddy();
+        }
+        
+        public System.Threading.Tasks.Task<Pract4.MyDBServiceReference.Buddy[]> GetAllBuddyAsync() {
+            return base.Channel.GetAllBuddyAsync();
+        }
+        
+        public Pract4.MyDBServiceReference.Buddy GetBuddyByName(string name) {
+            return base.Channel.GetBuddyByName(name);
+        }
+        
+        public System.Threading.Tasks.Task<Pract4.MyDBServiceReference.Buddy> GetBuddyByNameAsync(string name) {
+            return base.Channel.GetBuddyByNameAsync(name);
+        }
+        
+        public int CreateBuddy(string name, string gender, System.DateTime dob, string location, string introduction, string buddytype, string buddygender, string buddyduration, string buddydays, string buddyfitness, double buddyage1, double buddyage2, string imagename, string imagepath) {
+            return base.Channel.CreateBuddy(name, gender, dob, location, introduction, buddytype, buddygender, buddyduration, buddydays, buddyfitness, buddyage1, buddyage2, imagename, imagepath);
+        }
+        
+        public System.Threading.Tasks.Task<int> CreateBuddyAsync(string name, string gender, System.DateTime dob, string location, string introduction, string buddytype, string buddygender, string buddyduration, string buddydays, string buddyfitness, double buddyage1, double buddyage2, string imagename, string imagepath) {
+            return base.Channel.CreateBuddyAsync(name, gender, dob, location, introduction, buddytype, buddygender, buddyduration, buddydays, buddyfitness, buddyage1, buddyage2, imagename, imagepath);
+        }
+        
+        public int UpdateIntroduction(string userid, string introduction) {
+            return base.Channel.UpdateIntroduction(userid, introduction);
+        }
+        
+        public System.Threading.Tasks.Task<int> UpdateIntroductionAsync(string userid, string introduction) {
+            return base.Channel.UpdateIntroductionAsync(userid, introduction);
+        }
+        
+        public int UpdateWorkoutDays(string userid, string workoutdays) {
+            return base.Channel.UpdateWorkoutDays(userid, workoutdays);
+        }
+        
+        public System.Threading.Tasks.Task<int> UpdateWorkoutDaysAsync(string userid, string workoutdays) {
+            return base.Channel.UpdateWorkoutDaysAsync(userid, workoutdays);
+        }
+        
+        public int UpdateWorkoutDuration(string userid, string workoutduration) {
+            return base.Channel.UpdateWorkoutDuration(userid, workoutduration);
+        }
+        
+        public System.Threading.Tasks.Task<int> UpdateWorkoutDurationAsync(string userid, string workoutduration) {
+            return base.Channel.UpdateWorkoutDurationAsync(userid, workoutduration);
+        }
+        
+        public int UpdateGender(string userid, string gender) {
+            return base.Channel.UpdateGender(userid, gender);
+        }
+        
+        public System.Threading.Tasks.Task<int> UpdateGenderAsync(string userid, string gender) {
+            return base.Channel.UpdateGenderAsync(userid, gender);
+        }
+        
+        public int UpdateWorkoutType(string userid, string workouttype) {
+            return base.Channel.UpdateWorkoutType(userid, workouttype);
+        }
+        
+        public System.Threading.Tasks.Task<int> UpdateWorkoutTypeAsync(string userid, string workouttype) {
+            return base.Channel.UpdateWorkoutTypeAsync(userid, workouttype);
         }
     }
 }

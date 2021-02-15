@@ -52,7 +52,7 @@
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/BookingFormCustomer.aspx">Booking</a></li>
-                        <li><a runat="server" href="~/.aspx">Buddy System</a></li>
+                        <li><a runat="server" href="~/BuddySystemQn1.aspx">Buddy System</a></li>
                         <li><a runat="server" href="~/UserLogin.aspx">Login</a></li>
                         <li><a runat="server" href="~/UserSignUp.aspx">Registration</a></li>
                         <li><a runat="server" href="~/UserViewProfile.aspx">View Profile</a></li>

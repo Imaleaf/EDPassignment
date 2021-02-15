@@ -69,4 +69,29 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Login" nillable="true" type="tns:Login" />
+  <xs:complexType name="ArrayOfBuddy">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Buddy" nillable="true" type="tns:Buddy" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBuddy" nillable="true" type="tns:ArrayOfBuddy" />
+  <xs:complexType name="Buddy">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Birthdate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Buddyage1" type="xs:double" />
+      <xs:element minOccurs="0" name="Buddyage2" type="xs:double" />
+      <xs:element minOccurs="0" name="Buddydays" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Buddyduration" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Buddyfitness" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Buddygender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Buddytype" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ImageName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ImagePath" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Introduction" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Buddy" nillable="true" type="tns:Buddy" />
 </xs:schema>

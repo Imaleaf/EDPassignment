@@ -4,7 +4,7 @@
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
       <xsd:import namespace="http://tempuri.org/" />
       <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-      <xsd:import namespace="http://schemas.datacontract.org/2004/07/MyDBService" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/" />
       <xsd:import namespace="http://schemas.datacontract.org/2004/07/MyDBService.Entity" />
     </xsd:schema>
   </wsdl:types>
@@ -80,6 +80,54 @@
   <wsdl:message name="IService1_GetLoginById_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetLoginByIdResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_GetAllBuddy_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBuddy" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllBuddy_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBuddyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBuddyByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBuddyByName" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBuddyByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBuddyByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateBuddy_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateBuddy" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateBuddy_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateBuddyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateIntroduction_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateIntroduction" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateIntroduction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateIntroductionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateWorkoutDays_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWorkoutDays" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateWorkoutDays_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWorkoutDaysResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateWorkoutDuration_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWorkoutDuration" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateWorkoutDuration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWorkoutDurationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateGender_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateGender" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateGender_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateGenderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateWorkoutType_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWorkoutType" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateWorkoutType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWorkoutTypeResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
@@ -128,6 +176,38 @@
     <wsdl:operation name="GetLoginById">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetLoginById" message="tns:IService1_GetLoginById_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetLoginByIdResponse" message="tns:IService1_GetLoginById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBuddy">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllBuddy" message="tns:IService1_GetAllBuddy_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllBuddyResponse" message="tns:IService1_GetAllBuddy_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBuddyByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetBuddyByName" message="tns:IService1_GetBuddyByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetBuddyByNameResponse" message="tns:IService1_GetBuddyByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateBuddy">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CreateBuddy" message="tns:IService1_CreateBuddy_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CreateBuddyResponse" message="tns:IService1_CreateBuddy_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateIntroduction">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateIntroduction" message="tns:IService1_UpdateIntroduction_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateIntroductionResponse" message="tns:IService1_UpdateIntroduction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkoutDays">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateWorkoutDays" message="tns:IService1_UpdateWorkoutDays_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateWorkoutDaysResponse" message="tns:IService1_UpdateWorkoutDays_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkoutDuration">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateWorkoutDuration" message="tns:IService1_UpdateWorkoutDuration_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateWorkoutDurationResponse" message="tns:IService1_UpdateWorkoutDuration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGender">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateGender" message="tns:IService1_UpdateGender_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateGenderResponse" message="tns:IService1_UpdateGender_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkoutType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateWorkoutType" message="tns:IService1_UpdateWorkoutType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateWorkoutTypeResponse" message="tns:IService1_UpdateWorkoutType_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
@@ -233,6 +313,78 @@
     </wsdl:operation>
     <wsdl:operation name="GetLoginById">
       <soap:operation soapAction="http://tempuri.org/IService1/GetLoginById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBuddy">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAllBuddy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBuddyByName">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetBuddyByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateBuddy">
+      <soap:operation soapAction="http://tempuri.org/IService1/CreateBuddy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateIntroduction">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateIntroduction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkoutDays">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateWorkoutDays" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkoutDuration">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateWorkoutDuration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGender">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateGender" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkoutType">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateWorkoutType" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

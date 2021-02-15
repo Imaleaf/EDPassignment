@@ -111,6 +111,20 @@
     <Content Include="BookingFormCustomer.aspx" />
     <None Include="Connected Services\MyDBServiceReference\configuration91.svcinfo" />
     <None Include="Connected Services\MyDBServiceReference\configuration.svcinfo" />
+    <Content Include="BuddyDiscoverProfile.aspx" />
+    <Content Include="BuddySystemPicture.aspx" />
+    <Content Include="BuddySystemQn1.aspx" />
+    <Content Include="BuddySystemQn10.aspx" />
+    <Content Include="BuddySystemQn11.aspx" />
+    <Content Include="BuddySystemQn2.aspx" />
+    <Content Include="BuddySystemQn3.aspx" />
+    <Content Include="BuddySystemQn4.aspx" />
+    <Content Include="BuddySystemQn5.aspx" />
+    <Content Include="BuddySystemQn6.aspx" />
+    <Content Include="BuddySystemQn7.aspx" />
+    <Content Include="BuddySystemQn8.aspx" />
+    <Content Include="BuddySystemQn9.aspx" />
+    <Content Include="BuddyViewProfile.aspx" />
     <Content Include="Connected Services\MyDBServiceReference\Pract4.MyDBServiceReference.Booking.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -124,6 +138,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Connected Services\MyDBServiceReference\Pract4.MyDBServiceReference.Login.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MyDBServiceReference\Pract4.MyDBServiceReference.Buddy.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Connected Services\MyDBServiceReference\Reference.svcmap">
@@ -158,14 +175,14 @@
     <None Include="Connected Services\MyDBServiceReference\MyDBService.Entity.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\MyDBServiceReference\MyDBService.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Connected Services\MyDBServiceReference\service.wsdl" />
     <None Include="Connected Services\MyDBServiceReference\service.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\MyDBServiceReference\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\MyDBServiceReference\service2.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -224,6 +241,104 @@
     </Compile>
     <Compile Include="BookingFormCustomer.aspx.designer.cs">
       <DependentUpon>BookingFormCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuddyDiscoverProfile.aspx.cs">
+      <DependentUpon>BuddyDiscoverProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuddyDiscoverProfile.aspx.designer.cs">
+      <DependentUpon>BuddyDiscoverProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuddySystemPicture.aspx.cs">
+      <DependentUpon>BuddySystemPicture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuddySystemPicture.aspx.designer.cs">
+      <DependentUpon>BuddySystemPicture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuddySystemQn1.aspx.cs">
+      <DependentUpon>BuddySystemQn1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuddySystemQn1.aspx.designer.cs">
+      <DependentUpon>BuddySystemQn1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuddySystemQn10.aspx.cs">
+      <DependentUpon>BuddySystemQn10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuddySystemQn10.aspx.designer.cs">
+      <DependentUpon>BuddySystemQn10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuddySystemQn11.aspx.cs">
+      <DependentUpon>BuddySystemQn11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuddySystemQn11.aspx.designer.cs">
+      <DependentUpon>BuddySystemQn11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuddySystemQn2.aspx.cs">
+      <DependentUpon>BuddySystemQn2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuddySystemQn2.aspx.designer.cs">
+      <DependentUpon>BuddySystemQn2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuddySystemQn3.aspx.cs">
+      <DependentUpon>BuddySystemQn3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuddySystemQn3.aspx.designer.cs">
+      <DependentUpon>BuddySystemQn3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuddySystemQn4.aspx.cs">
+      <DependentUpon>BuddySystemQn4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuddySystemQn4.aspx.designer.cs">
+      <DependentUpon>BuddySystemQn4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuddySystemQn5.aspx.cs">
+      <DependentUpon>BuddySystemQn5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuddySystemQn5.aspx.designer.cs">
+      <DependentUpon>BuddySystemQn5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuddySystemQn6.aspx.cs">
+      <DependentUpon>BuddySystemQn6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuddySystemQn6.aspx.designer.cs">
+      <DependentUpon>BuddySystemQn6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuddySystemQn7.aspx.cs">
+      <DependentUpon>BuddySystemQn7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuddySystemQn7.aspx.designer.cs">
+      <DependentUpon>BuddySystemQn7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuddySystemQn8.aspx.cs">
+      <DependentUpon>BuddySystemQn8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuddySystemQn8.aspx.designer.cs">
+      <DependentUpon>BuddySystemQn8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuddySystemQn9.aspx.cs">
+      <DependentUpon>BuddySystemQn9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuddySystemQn9.aspx.designer.cs">
+      <DependentUpon>BuddySystemQn9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuddyViewProfile.aspx.cs">
+      <DependentUpon>BuddyViewProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuddyViewProfile.aspx.designer.cs">
+      <DependentUpon>BuddyViewProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Connected Services\MyDBServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>

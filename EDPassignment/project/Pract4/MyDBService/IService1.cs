@@ -42,7 +42,26 @@ namespace MyDBService
 
         [OperationContract]
         Login GetLoginById(string userid);
+
+        [OperationContract]
+        List<Buddy> GetAllBuddy();
+
+        [OperationContract]
+        Buddy GetBuddyByName(string name);
+        [OperationContract]
+        int CreateBuddy(string name, string gender, DateTime dob, string location, string introduction, string buddytype, string buddygender, string buddyduration, string buddydays, string buddyfitness, double buddyage1, double buddyage2, string imagename, string imagepath);
+        [OperationContract]
+        int UpdateIntroduction(string userid, string introduction);
+        [OperationContract]
+        int UpdateWorkoutDays(string userid, string workoutdays);
+        [OperationContract]
+        int UpdateWorkoutDuration(string userid, string workoutduration);
+        [OperationContract]
+        int UpdateGender(string userid, string gender);
+        [OperationContract]
+        int UpdateWorkoutType(string userid, string workouttype);
     }
+}
 
     // Use a data contract as illustrated in the sample below to add composite types to service operations.
     // You can add XSD files into the project. After building the project, you can directly use the data types defined there, with the namespace "MyDBService.ContractType".
@@ -66,4 +85,5 @@ namespace MyDBService
             set { stringValue = value; }
         }
     }
-}
+
+

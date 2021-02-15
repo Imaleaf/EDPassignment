@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entity\Booking.cs" />
+    <Compile Include="Entity\Buddy.cs" />
     <Compile Include="Entity\Employee.cs" />
     <Compile Include="Entity\Login.cs" />
     <Compile Include="Entity\UserInfo.cs" />

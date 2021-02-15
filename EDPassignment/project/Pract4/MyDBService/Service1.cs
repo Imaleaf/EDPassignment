@@ -81,5 +81,45 @@ namespace MyDBService
             Login obj = new Login();
             return obj.SelectByuserid(userid);
         }
+        public List<Buddy> GetAllBuddy()
+        {
+            Buddy emp = new Buddy();
+            return emp.SelectAll();
+        }
+        public Buddy GetBuddyByName(string name)
+        {
+            Buddy emp = new Buddy();
+            return emp.SelectByName(name);
+        }
+        public int CreateBuddy(string name, string gender, DateTime dob, string location, string introduction, string buddytype, string buddygender, string buddyduration, string buddydays, string buddyfitness, double buddyage1, double buddyage2, string imagename, string imagepath)
+        {
+            Buddy emp = new Buddy(name, gender, dob, location, introduction, buddytype, buddygender, buddyduration, buddydays, buddyfitness, buddyage1, buddyage2, imagename, imagepath);
+            return emp.Insert();
+        }
+        public int UpdateIntroduction(string userid, string introduction)
+        {
+            Buddy td = new Buddy();
+            return td.updateIntroduction(userid, introduction);
+        }
+        public int UpdateWorkoutDays(string userid, string workoutdays)
+        {
+            Buddy td = new Buddy();
+            return td.updateWorkoutDays(userid, workoutdays);
+        }
+        public int UpdateWorkoutDuration(string userid, string workoutduration)
+        {
+            Buddy td = new Buddy();
+            return td.updateWorkoutDuration(userid, workoutduration);
+        }
+        public int UpdateGender(string userid, string gender)
+        {
+            Buddy td = new Buddy();
+            return td.updateGender(userid, gender);
+        }
+        public int UpdateWorkoutType(string userid, string workouttype)
+        {
+            Buddy td = new Buddy();
+            return td.updateWorkoutType(userid, workouttype);
+        }
     }
 }
